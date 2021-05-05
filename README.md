@@ -16,6 +16,10 @@
 - [Typescript](https://www.typescriptlang.org/)
 - [Redux/React-Redux](https://react-redux.js.org/)
 
+## Заимствования
+
+Был заимствован и переработан в TypeScript код виджета *Advanced Real Time Chart* у [rafaelklaessen](https://github.com/rafaelklaessen/react-tradingview-widget).
+
 ## Стандартные скрипты
 
 ### `npm i`
