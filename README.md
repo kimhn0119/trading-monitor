@@ -2,7 +2,7 @@
 
 ## Что и зачем
 
-Тестовый проект на адаптацию виджетов открытого API [Tradingview](https://www.tradingview.com/) при компонентном подходе.
+Тестовый проект на адаптацию виджетов [Tradingview](https://www.tradingview.com/).
 
 ## Настройка сборки {[Create React App](https://github.com/facebook/create-react-app)}
 
@@ -15,10 +15,11 @@
 - [ReactJS](https://reactjs.org/)
 - [Typescript](https://www.typescriptlang.org/)
 - [Redux/React-Redux](https://react-redux.js.org/)
+- [Tradingview API Widgets](https://www.tradingview.com/widget/)
 
 ## Заимствования
 
-Был заимствован и переработан в TypeScript код виджета *Advanced Real Time Chart* у [rafaelklaessen](https://github.com/rafaelklaessen/react-tradingview-widget).
+Был заимствован и немного переписан на TypeScript компонент виджета *Advanced Real Time Chart* у [rafaelklaessen](https://github.com/rafaelklaessen/react-tradingview-widget).
 
 ## Стандартные скрипты
 
@@ -30,15 +31,9 @@
 
 Запуск приложения в режиме разработки.
 
-### `npm test`
-
-Запуск тестов.
-
-### `npm run build`
-
-Сборка приложения на продакшн.
-
 ## Скриншоты
+
+![Trading Monitor](./images/usage-trading-monitor.gif)
 
 ### Компонент Markets
 
