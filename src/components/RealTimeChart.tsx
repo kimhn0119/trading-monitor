@@ -4,6 +4,18 @@ import {makeStyles} from '@material-ui/core/styles';
 import {Grid, Typography, Paper, Box, Button} from '@material-ui/core';
 import {RootStateOrAny, useSelector} from 'react-redux';
 
+let initialShapes =[
+    "MACD@tv-basicstudies",
+    "StochasticRSI@tv-basicstudies",
+    "TripleEMA@tv-basicstudies"
+  ];
+//   const [symbol] = useState("AAPL");
+//   const [resolution] = useState("D");
+
+  const [shapes, setShapes] = useState(
+    initialShapes
+  );
+
 const useStyles = makeStyles((theme) => ({
     root: {
         width: '100%',
@@ -53,9 +65,12 @@ export default function RealTimeChart(): JSX.Element {
     const TradingViewWidgetWindow = (): JSX.Element => {
         return (
             <TradingViewWidget
+                // locale='en'
                 width='100%'
                 symbol={share}
                 timezone="Europe/Moscow"
+                studies={shapes} 
+
             />
         );
     }

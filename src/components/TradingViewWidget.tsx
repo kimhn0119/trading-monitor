@@ -13,6 +13,7 @@ interface IProps {
     interval?: string | number;
     popup_width?: string | number;
     popup_height?: string | number;
+    studies:string[];
 }
 
 export enum EBarStyles {
@@ -119,6 +120,7 @@ export default class TradingViewWidget extends PureComponent<IProps> {
     static width: number;
     static withdateranges: boolean;
 
+
     static defaultProps = {
         allow_symbol_change: true,
         autosize: false,
@@ -138,7 +140,8 @@ export default class TradingViewWidget extends PureComponent<IProps> {
         toolbar_bg: '#F1F3F6',
         widgetType: 'widget',
         width: 980,
-        withdateranges: false
+        withdateranges: false,
+   
     };
 
     containerId = `${CONTAINER_ID}-${Math.random()}`;
